@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: calibri, Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+body {
+    background-color: #3c40c6;
+    background-image: url(./assets/stars-opacity.0979c1.svg);
+    background-repeat: repeat;
+}
+
+.main {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    overflow: y-scroll;
+
+}
+
+nav {
+    width: 100%;
+    height: 105px;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.logo {
+    font-size: 170%;
+    color: #ffffff;
+    letter-spacing: 3.5px;
+    font-weight: 500;
+    text-shadow: 0 1px, 1px 0, 1px 1px;
+}
+
+.logo a:active {
+    font-size: 90%;
+}
+
+.box1 {
+    position: absolute;
+    right: 12%;
+}
+
+.box2 {
+    position: absolute;
+    right: 0;
+}
+
+.about {
+    font-size: 120%;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
+.about:active {
+    font-size: 90%;
+}
+
+.color-box {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px 26px;
+    margin-top: 15px;
+    justify-content: space-between;
+}
+
+a img {
+    border-radius: 8px;
+    margin: auto;
+}
+
+.contain {
+    width: 100%;
+    height: 56px;
+    background-color: #0c2461;
+    border-radius: 5px;
+}
+
+.contain ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+}
+
+.count {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width:455px) {
+    
+    .logo{
+        margin-left: 34px;
+        font-size: 150%;
+    }
+    
+    .about {
+        display: none;
+    }
+
+    .main {
+        width: 100%;
+        justify-content: space-around
+    }
+
+    .contain {
+        display: none;
+    }
+
+    .box-main {
+        margin-top: 10px;
+    }
+
+    .color-box a img {
+        margin: auto;
+        width: 300px;
+        
+
+    }
+
+    .color-box {
+        gap: 50px;
+    }
+
+}
+
+@media only screen and (max-width:768px) {
+
+
+    .box {
+        justify-content: space-around;
+        margin: auto;
+
+    }
+
+    .count {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 80%;
+        letter-spacing: 0.5px;
+        margin: auto;
+    }
+
+    .color-box a{
+        margin: auto;
+    }
+
+}
